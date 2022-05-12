@@ -25,7 +25,7 @@ SECRET_KEY = 'jngd^f4)bl21w2#8hjjju_2j&^9a5!awz7ck&8g=wuk*si@+pr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chizer.pythonanywhere.com']
 
 
 # Application definition
@@ -125,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 #设置全局静态文件的路径,django在上面已添加了'django.contrib.staticfiles',
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
